@@ -1,32 +1,22 @@
+<!--
+ * @Description: 首页模块
+ * @Author: 前端-张晓伦
+ * @Date: 2020-02-10 16:54:56
+ * @LastEditTime: 2020-03-12 12:59:09
+ * @LastEditors: 小刀
+ -->
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <div></div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script>
+export default {
+  name: 'app',
+  data() {
+    return {}
   }
 }
+</script>
+
+<style lang='less' scoped>
 </style>
