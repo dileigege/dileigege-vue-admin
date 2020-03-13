@@ -2,7 +2,7 @@
  * @Description: 模块
  * @Author: DA-HUA
  * @Date: 2020-02-10 16:54:56
- * @LastEditTime: 2020-03-12 14:58:20
+ * @LastEditTime: 2020-03-13 20:38:40
  * @LastEditors: 小刀
  */
 module.exports = {
@@ -18,13 +18,14 @@ module.exports = {
     parser: 'babel-eslint'
   },
   rules: {
+    'semi': 0,
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     "space-before-function-paren": ["error", {
       "anonymous": "always",
       "named": "always",
-      "asyncArrow": "always"
+      "asyncArrow": "always",
     }], 
-     'semi':['err','always']
+    //  'semi':['err','always']
   }
 }
