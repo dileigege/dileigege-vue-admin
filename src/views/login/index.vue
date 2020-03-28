@@ -2,12 +2,16 @@
  * @Description:  登陆模块
  * @Author: 前端-晓
  * @Date: 2020-03-13 11:03:54
- * @LastEditTime: 2020-03-27 19:02:36
+ * @LastEditTime: 2020-03-28 14:30:49
  * @LastEditors: 项目组长
  -->
  <!--  -->
  <template>
   <!--logon-module 开始  -->
+  <div>
+    <div class="header">
+      头部
+      </div>
   <div class="logon-module">
     <el-form
       class="logon-form"
@@ -28,6 +32,7 @@
           <el-input class="long-iput" v-model="form.verify" placeholder="请输入验证码"></el-input>
         </el-col>
         <el-col :offset="1" :span="9">
+         
           <el-button
             round
             class="button-fler"
@@ -46,6 +51,8 @@
       </el-form-item>
     </el-form>
   </div>
+  </div>
+
 </template>
 <script>
 import axios from "axios";
@@ -202,8 +209,14 @@ export default {
 </style>
 
  <style lang='less' scoped>
+ .header{
+   height: 55px;
+   line-height: 55px;
+   box-shadow: 1px 0 9px #eeeeee;
+ }
 .logon-module {
   height: 100%;
+  padding: 45px 0;
   background-color: #eee;
   display: flex;
   justify-content: center;
