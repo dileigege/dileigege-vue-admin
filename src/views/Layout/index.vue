@@ -2,7 +2,7 @@
  * @Description: Layout组件
  * @Author: Fore-Zhang
  * @Date: 2020-03-27 19:10:42
- * @LastEditTime: 2020-03-28 21:58:32
+ * @LastEditTime: 2020-03-31 22:01:18
  * @LastEditors: 项目组长
  -->
 <!--  -->
@@ -19,9 +19,9 @@
   </el-main>
   <!-- 内容部分结束  -->
   <!-- 尾部部分开始 -->
-  <el-footer>      
+  <!-- <el-footer>       -->
     <layTopnav/> 
-  </el-footer>
+  <!-- </el-footer> -->
   <!-- 尾部部分结束 -->
 </el-container>
 
@@ -46,19 +46,15 @@ export default {
 @white:#fff;
 @gray:#333333;
 .el-container{
-  width: 100%;
+  // width: 100%;
   .el-header{
    background:linear-gradient(90deg, #0575e6 0%,#021b79 100% );
   line-height: 60px;
 }
  .el-main{
-   background-color:@white;
- }
- .el-footer{
-   position:absolute;
    width: 100%;
-  background:linear-gradient(90deg, #0575e6 0%,#021b79 100% );
-   bottom: 0;
+   background-color: #eee;
+
  }
 }
 

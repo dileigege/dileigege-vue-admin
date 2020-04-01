@@ -1,19 +1,28 @@
 <!--
- * @Description: 首页模块
- * @Author: 前端-晓
- * @Date: 2020-03-13 11:04:54
- * @LastEditTime: 2020-03-28 22:19:24
+ * @Description: Layout组件
+ * @Author: Fore-Zhang
+ * @Date: 2020-03-27 19:10:42
+ * @LastEditTime: 2020-04-01 11:49:08
  * @LastEditors: 项目组长
  -->
+<!--  -->
 <template>
-  <div class="">
-  </div>
+<el-row :gutter="22">
+  <el-col :span="17"> <homebox/></el-col>
+  <el-col :span="7"> <homepic/> </el-col>
+</el-row>
 </template>
-
 <script>
+
+import  homebox from './comments/homebox'; 
+import  homepic from './comments/homepic';
 export default {
-  name: 'Homeapp',
-  data () {
+  name: 'homeapp',
+  components: {
+  homebox,
+  homepic
+  },
+  data() {
     return {}
   }
 }
